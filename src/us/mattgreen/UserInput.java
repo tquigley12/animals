@@ -34,12 +34,20 @@ public int getCatKills(String mousesKilled) throws NumberFormatException, Except
     return numKilled; 
 }
     
-public void getDogFriendly(String dogFriendly) throws Exception {
+public boolean getDogFriendly(String dogFriendly) throws Exception {
     
-    if (!dogFriendly.equalsIgnoreCase("true")
-    && (!dogFriendly.equalsIgnoreCase("false"))) {
-        throw new Exception("Invalid valid for friendly");
+    boolean friendly = false;
+    
+    if (dogFriendly.equalsIgnoreCase("true")) {
+        friendly = true;
+        return friendly;
+    } else if (dogFriendly.equalsIgnoreCase("false")) {
+        friendly = false;
+        return friendly;
+    } else {
+        throw new Exception("Invalid value for friendly");
     }
+    
 }  
 
 public int getStudentAge(String age) throws NumberFormatException, Exception {

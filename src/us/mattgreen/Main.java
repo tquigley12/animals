@@ -64,7 +64,7 @@ public class Main {
                     try {
                         System.out.println("Enter number of mouses killed");
                         input = keyboard.nextLine();
-                        userInput.getCatKills(input);
+                        mousesKilled = userInput.getCatKills(input);
                         validInput = true;
                     }
                     catch (Exception e) {
@@ -83,7 +83,7 @@ public class Main {
                     try {
                         System.out.println("Dog is friendly?  True or False");
                         input = keyboard.nextLine();
-                        userInput.getDogFriendly(input);
+                        dogFriendly = userInput.getDogFriendly(input);
                         validInput = true;
                     }
                     catch (Exception e) {
@@ -102,7 +102,7 @@ public class Main {
                     try {
                         System.out.println("Enter age of student");
                         input = keyboard.nextLine();
-                        userInput.getStudentAge(input);
+                        age = userInput.getStudentAge(input);
                         validInput = true;
                     }
                     catch (Exception e) {
